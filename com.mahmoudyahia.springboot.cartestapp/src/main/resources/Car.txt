@@ -1,0 +1,16 @@
+######
+## Database Version = MySQL 8 
+######
+CREATE DATABASE `cars` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
+######
+CREATE TABLE `car` (
+  `car_id` int(11) NOT NULL,
+  `car_model` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `car_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `model_details` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `year_of_production` date DEFAULT NULL,
+  PRIMARY KEY (`car_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+######
+### Hibernate will create the database tables when it start by Spring ..! 
+######
